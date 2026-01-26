@@ -1,0 +1,9 @@
+######## Grundkonfiguration ########
+## Betriebsystem Update
+
+Sudo apt update && sudo apt upgrade -y 
+sudo apt autoremove
+
+## SSH aktivieren
+
+sudo systemctl enable SSH
