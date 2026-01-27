@@ -1,0 +1,13 @@
+Active Directory Struktur
+
+---Jellyfin Gruppen---
+OU=Jellyfin,OU=03_Gruppen,OU=Hartl,DC=th,DC=thomashartl,DC=de
+
+GG-FG-Jellyfin-Standard     -   Standard Rechte in JF 
+GG-FG-Jellyfin-Admin        -   Admin Rechte in JF
+
+---Fileshare Gruppen---
+OU=TrueNAS,OU=03_Gruppen,OU=Hartl,DC=th,DC=thomashartl,DC=de
+
+GG-FSG-Jellyfin_Media-r     -   Lese & execute Rechte im Media Verzeichnis
+GG-FSG-Jellyfin_Media-w     -   Schreib-Rechte im Media Verzeichnis

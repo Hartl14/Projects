@@ -1,0 +1,74 @@
+######## Grundkonfiguration ########
+## Betriebssystem Update
+sudo apt update && sudo apt upgrade -y
+sudo apt autoremove
+
+## SSH aktivieren
+sudo systemctl enable ssh
+sudo systemctl start ssh
+
+########## Firewall ##########
+## Firewall installieren
+sudo apt install ufw -y
+
+## Firewall konfigurieren
+sudo ufw default deny incoming
+sudo ufw default allow outgoing
+sudo ufw allow ssh
+sudo ufw allow 41641/udp
+sudo ufw allow 443/tcp
+
+## Firewall aktivieren
+sudo ufw enable
+sudo ufw status
+
+########## Systemhärtung ##########
+
+## Autoupdates 
+sudo apt install unattended-upgrades -y
+sudo dpkg-reconfigure unattended-upgrades
+
+##### SSH absichern #####
+
+## Key einbinden
+mkdir -p ~/.ssh
+chmod 700 ~/.ssh
+nano ~/.ssh/authorized_keys
+# Key einfügen
+chmod 600 ~/.ssh/authorized_keys
+
+## Fail2Ban
+
+# installieren 
+sudo apt install fail2ban -y
+
+# konfigurieren
+sudo nano /etc/fail2ban/jail.local
+
+## Konfiguration ##
+[sshd]
+enabled = true
+port = ssh
+filter = sshd
+logpath = /var/log/auth.log
+maxretry = 5
+bantime = 1h
+findtime = 10m
+###################
+
+# Dienst starten und aktivieren 
+sudo systemctl enable fail2ban
+sudo systemctl start fail2ban
+
+## SSH Einstellungen
+# Konfigurationsdatei öffnen 
+sudo nano /etc/ssh/sshd_config
+
+## Konfiguration ##
+PermitRootLogin no
+PasswordAuthentication no
+PubkeyAuthentication yes
+MaxAuthTries 3
+LoginGraceTime 30
+###################
+
