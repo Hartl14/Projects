@@ -70,4 +70,50 @@ MaxAuthTries 3
 LoginGraceTime 30
 ###################
 
+########## Jellyfin Installation ###########
+
+##### Vorbereitungen #####
+
+## System aktualisieren
+sudo apt update && sudo apt upgrade -y
+sudo apt autoremove -y
+
+## Pakete installieren
+sudo apt install -y curl apt-transport-https gnupg lsb-release ca-certificates software-properties-common cifs-utils
+
+##### Share Mounten #####
+
+## Mount-Punkt erstellen
+sudo mkdir -p /mnt/media
+
+## Credential-Datei anlegen
+sudo nano /root/.smbcredentials
+## Inhalt ##
+username=TH\svc-jellyfin
+password="***********"
+domain=TH
+############
+
+## Datei schützen
+sudo chmod 600 /root/.smbcredentials
+
+## Automatisches Mounten beim Boot
+sudo nano /etc/fstab
+## Ihnalt ##
+//192.168.178.204/Jellyfin_Media /mnt/media cifs credentials=/root/.smbcredentials,iocharset=utf8,vers=3.1.1,sec=ntlmssp,_netdev 0 0
+############
+
+##### GPU einbinden #####
+
+## NVIDIA-Treiber installieren
+sudo apt install -y nvidia-driver-535
+
+##### Jellyfin installieren #####
+
+## Installation-Skript herunterladen und ausführen
+curl https://repo.jellyfin.org/install-debuntu.sh | sudo bash
+
+
+
+
 
