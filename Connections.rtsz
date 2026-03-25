@@ -2,7 +2,7 @@
 <RTSZDocument>
   <RoyalDocument>
     <ID>1bd4f8b0-7ea2-4876-b46b-bb8f746743b2</ID>
-    <Modified>01/27/2026 13:53:53.479</Modified>
+    <Modified>03/07/2026 17:26:22.401</Modified>
     <ModifiedBy>NB-001\Thomas Hartl</ModifiedBy>
     <Name>Connections</Name>
     <Created>01/27/2026 13:22:14.650</Created>
@@ -171,6 +171,113 @@
     <PuttyCloseOnExit>1</PuttyCloseOnExit>
     <URI>192.168.178.207</URI>
     <UseGlobalPlugInWin>False</UseGlobalPlugInWin>
+  </RoyalSSHConnection>
+  <RoyalSSHConnection>
+    <ID>48015965-799b-4c7c-8751-deed312b5b2d</ID>
+    <Name>N8NSRV1</Name>
+    <Modified>03/07/2026 17:27:04.405</Modified>
+    <Created>03/07/2026 17:26:22.259</Created>
+    <ModifiedBy>NB-001\Thomas Hartl</ModifiedBy>
+    <CreatedBy>NB-001\Thomas Hartl</CreatedBy>
+    <PositionNr>6</PositionNr>
+    <IsConnectionTemplate>False</IsConnectionTemplate>
+    <ParentID>fad4b101-a7bc-4db7-8d5f-c2140b5e9261</ParentID>
+    <ObjectSpecialUsage />
+    <URI>192.168.178.210</URI>
+    <UseGlobalPlugInWin>False</UseGlobalPlugInWin>
+    <PlugInWin>107df0a3-eab8-40ee-87f2-cc8a310f9269</PlugInWin>
+    <CustomField11 />
+    <CustomField12 />
+    <CustomField13 />
+    <CustomField14 />
+    <CustomField15 />
+    <CustomField16 />
+    <CustomField17 />
+    <CustomField18 />
+    <CustomField19 />
+    <CustomField20 />
+    <CustomProperties />
+    <CredentialPassword />
+    <CredentialPassphrase />
+    <Passphrase />
+    <ProxyPassword />
+    <Favorite>False</Favorite>
+    <ColorFromParent>False</ColorFromParent>
+    <ColorName />
+    <Color />
+    <CustomImage />
+    <CustomImageName />
+    <CustomImageList>{}</CustomImageList>
+    <Port>22</Port>
+    <PuttyCloseOnExit>1</PuttyCloseOnExit>
+    <Description />
+    <PhysicalAddress />
+    <IsTelnetConnection>False</IsTelnetConnection>
+    <IsSerialPortConnection>False</IsSerialPortConnection>
+    <ConnectionType>ssh;SSH Connection</ConnectionType>
+    <PuttySessionName />
+    <Font />
+    <FontSize>10</FontSize>
+    <FontIsBold>False</FontIsBold>
+    <FontQuality>0</FontQuality>
+    <CursorAppearance>0</CursorAppearance>
+    <HideMousePointerWhenTypingInWindow>False</HideMousePointerWhenTypingInWindow>
+    <BlinkCursor>False</BlinkCursor>
+    <EnableBlinkingText>False</EnableBlinkingText>
+    <TerminalColumns>80</TerminalColumns>
+    <TerminalRows>24</TerminalRows>
+    <WindowResizeAction>0</WindowResizeAction>
+    <ShowWindowTitle>False</ShowWindowTitle>
+    <DisplayScrollbar>True</DisplayScrollbar>
+    <SunkenEdgeBorder>False</SunkenEdgeBorder>
+    <GapBetweenTextAndWindowEdge>1</GapBetweenTextAndWindowEdge>
+    <WindowTitle />
+    <SeparateWindowAndIconTitles>True</SeparateWindowAndIconTitles>
+    <WarnBeforeClosingWindow>True</WarnBeforeClosingWindow>
+    <WindowClosesOnAltF4>True</WindowClosesOnAltF4>
+    <SystemMenuAppearsOnAltSpace>False</SystemMenuAppearsOnAltSpace>
+    <SystemMenuAppearsOnAltAlone>False</SystemMenuAppearsOnAltAlone>
+    <EnsureWindowIsAlwaysOnTop>False</EnsureWindowIsAlwaysOnTop>
+    <FullScreenOnAltEnter>False</FullScreenOnAltEnter>
+    <UseBackgroundColourToEraseScreen>True</UseBackgroundColourToEraseScreen>
+    <AllowTerminalToSpecifyANSIColours>True</AllowTerminalToSpecifyANSIColours>
+    <AllowTerminalToUseXterm256ColourMode>True</AllowTerminalToUseXterm256ColourMode>
+    <BoldedTextIsADifferentColour>True</BoldedTextIsADifferentColour>
+    <AttemptToUseLogicalPalettes>False</AttemptToUseLogicalPalettes>
+    <UseSystemColours>False</UseSystemColours>
+    <ColorDefaultForeground>#BBBBBB</ColorDefaultForeground>
+    <ColorDefaultBackground>#000000</ColorDefaultBackground>
+    <ColorCursorText>#000000</ColorCursorText>
+    <ColorCursorColour>#00FF00</ColorCursorColour>
+    <CustomPalette0NormalBlack>#000000</CustomPalette0NormalBlack>
+    <CustomPalette1NormalRed>#BB0000</CustomPalette1NormalRed>
+    <CustomPalette2NormalGreen>#00BB00</CustomPalette2NormalGreen>
+    <CustomPalette3NormalYellow>#BBBB00</CustomPalette3NormalYellow>
+    <CustomPalette4NormalBlue>#0000BB</CustomPalette4NormalBlue>
+    <CustomPalette5NormalMagenta>#BB00BB</CustomPalette5NormalMagenta>
+    <CustomPalette6NormalCyan>#00BBBB</CustomPalette6NormalCyan>
+    <CustomPalette7NormalWhite>#BBBBBB</CustomPalette7NormalWhite>
+    <ColorDefaultBoldForeground>#FFFFFF</ColorDefaultBoldForeground>
+    <ColorDefaultBoldBackground>#555555</ColorDefaultBoldBackground>
+    <CustomPalette8BrightBlack>#555555</CustomPalette8BrightBlack>
+    <CustomPalette9BrightRed>#FF5555</CustomPalette9BrightRed>
+    <CustomPalette10BrightGreen>#55FF55</CustomPalette10BrightGreen>
+    <CustomPalette11BrightYellow>#FFFF55</CustomPalette11BrightYellow>
+    <CustomPalette12BrightBlue>#5555FF</CustomPalette12BrightBlue>
+    <CustomPalette13BrightMagenta>#FF55FF</CustomPalette13BrightMagenta>
+    <CustomPalette14BrightCyan>#55FFFF</CustomPalette14BrightCyan>
+    <CustomPalette15BrightWhite>#FFFFFF</CustomPalette15BrightWhite>
+    <CredentialUsername />
+    <CredentialId>b9013cbf-7a4b-4092-9f19-1fd3c34a68a0</CredentialId>
+    <CredentialName />
+    <CredentialFromParent>False</CredentialFromParent>
+    <CredentialMode>3</CredentialMode>
+    <CredentialAutologon>True</CredentialAutologon>
+    <CredentialOmitDomain>False</CredentialOmitDomain>
+    <CredentialKeyMode>0</CredentialKeyMode>
+    <PrivateKeyPath />
+    <CredentialKeyFile />
+    <CredentialKeyContent />
   </RoyalSSHConnection>
   <RoyalFolder>
     <ID>f8546a73-fa55-495f-a0d2-0654f031e387</ID>
